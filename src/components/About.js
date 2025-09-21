@@ -239,7 +239,7 @@ const About = () => {
       title: "Co-founder & CEO",
       bio: "Visionary leader with 8+ years of experience in web development and business strategy. Tirth specializes in creating innovative digital solutions that drive business growth and user engagement. His expertise in modern technologies and strategic thinking has helped numerous businesses transform their digital presence.",
       skills: ["Business Strategy", "Full-Stack Development", "Team Leadership", "Product Management"],
-      image: "/api/placeholder/150/150", // Placeholder for now
+      image: "/tirth-goyani-photo.jpg",
       social: {
         linkedin: "#",
         twitter: "#",
