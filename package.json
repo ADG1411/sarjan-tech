@@ -1,0 +1,12 @@
+{
+  "name": "sarjan-tech-root",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd sarjan-tech-website && npm install && npm run build",
+    "install": "cd sarjan-tech-website && npm install"
+  },
+  "engines": {
+    "node": "18.x",
+    "npm": ">=8.0.0"
+  }
+}
