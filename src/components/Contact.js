@@ -12,16 +12,11 @@ import {
   FaBullhorn,
   FaUser,
   FaCog,
-  FaBlog,
   FaCamera,
-  FaComments,
-  FaCalendar,
-  FaPlug,
   FaClipboardList,
   FaCalculator,
   FaChartLine,
-  FaTasks,
-  FaClock
+  FaTasks
 } from 'react-icons/fa';
 
 const ContactContainer = styled.section`
@@ -499,40 +494,7 @@ const UnifiedCard = styled.div`
 // Use UnifiedCard for Project Types
 const ProjectCard = styled(UnifiedCard)``;
 
-// Features Section
-const FeaturesGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 25px;
-  margin-bottom: 40px;
-
-  @media (max-width: ${breakpoints.mobile}) {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-`;
-
-const FeatureCategory = styled.div`
-  background: #F8FAFC;
-  border-radius: 12px;
-  padding: 25px;
-  border: 1px solid #E2E8F0;
-
-  .category-title {
-    font-family: 'Inter', 'Poppins', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #1A202C;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    .category-icon {
-      color: #ff6b35;
-    }
-  }
-`;
+// Features Section (unused styled components removed)
 
 const FeatureItem = styled.label`
   display: flex;
