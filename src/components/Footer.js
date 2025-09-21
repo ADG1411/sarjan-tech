@@ -236,6 +236,30 @@ const FooterBottom = styled.div`
   }
 `;
 
+const PoweredBy = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #B0B0B0;
+  font-size: 0.9rem;
+
+  img {
+    height: 30px;
+    width: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover img {
+    opacity: 1;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    justify-content: center;
+    margin-top: 10px;
+  }
+`;
+
 const Copyright = styled.p`
   color: #B0B0B0;
   font-size: 0.9rem;
@@ -459,8 +483,13 @@ const Footer = () => {
         <FooterBottom>
           <Copyright>
             © {new Date().getFullYear()} <button onClick={scrollToTop}>Sarjan Tech</button>. 
-            All rights reserved. | Powered by <button onClick={scrollToTop}>Sarjan Tech</button>
+            All rights reserved.
           </Copyright>
+          
+          <PoweredBy>
+            Powered by 
+            <img src="/sarjan-tech-logo.svg" alt="Sarjan Tech" />
+          </PoweredBy>
           
           <ScrollToTop onClick={scrollToTop} aria-label="Scroll to top">
             <FaArrowUp />
