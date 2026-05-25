@@ -10,7 +10,6 @@ import {
   FaGithub,
   FaEnvelope,
   FaPhone,
-  FaMapMarkerAlt,
   FaArrowUp
 } from 'react-icons/fa';
 
@@ -236,29 +235,6 @@ const FooterBottom = styled.div`
   }
 `;
 
-const PoweredBy = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #B0B0B0;
-  font-size: 0.9rem;
-
-  img {
-    height: 30px;
-    width: auto;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-  }
-
-  &:hover img {
-    opacity: 1;
-  }
-
-  @media (max-width: ${breakpoints.mobile}) {
-    justify-content: center;
-    margin-top: 10px;
-  }
-`;
 
 const Copyright = styled.p`
   color: #B0B0B0;

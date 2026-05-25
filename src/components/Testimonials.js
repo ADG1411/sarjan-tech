@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors, breakpoints, Card, SectionTitle, SectionSubtitle } from '../styles/GlobalStyles';
+import { colors, breakpoints, SectionTitle, SectionSubtitle } from '../styles/GlobalStyles';
 import { motion } from 'framer-motion';
 import { FaQuoteLeft, FaStar } from 'react-icons/fa';
 import Slider from 'react-slick';

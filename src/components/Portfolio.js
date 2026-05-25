@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { colors, breakpoints, Button, SectionTitle, SectionSubtitle } from '../styles/GlobalStyles';
+import { colors, breakpoints, SectionTitle, SectionSubtitle } from '../styles/GlobalStyles';
 import { motion } from 'framer-motion';
-import { FaExternalLinkAlt, FaCode } from 'react-icons/fa';
 
 const PortfolioContainer = styled.section`
   padding: 100px 0;
