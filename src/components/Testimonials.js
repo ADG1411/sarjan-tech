@@ -89,7 +89,22 @@ const TestimonialSlider = styled(Slider)`
   }
 `;
 
-const TestimonialCard = styled(motion(Card))`
+const TestimonialCard = styled(motion.div)`
+  background: ${colors.white};
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  padding: 30px;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 20px;
+  }
+
   margin: 20px 15px;
   text-align: center;
   position: relative;

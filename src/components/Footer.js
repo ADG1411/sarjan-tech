@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { colors, fonts, breakpoints } from '../styles/GlobalStyles';
 import { motion } from 'framer-motion';
-import { 
-  FaFacebookF, 
-  FaTwitter, 
-  FaLinkedinIn, 
-  FaInstagram, 
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
   FaGithub,
   FaEnvelope,
   FaPhone,
@@ -390,8 +390,8 @@ const Footer = () => {
                 Sarjan <span>Tech</span>
               </Logo>
               <Description>
-                Engineering the future of the web with innovative solutions, 
-                cutting-edge technology, and exceptional user experiences. 
+                Engineering the future of the web with innovative solutions,
+                cutting-edge technology, and exceptional user experiences.
                 Your digital transformation partner.
               </Description>
               <SocialLinks>
@@ -442,7 +442,7 @@ const Footer = () => {
                   <FaEnvelope />
                   <div>
                     <a href="mailto:info@sarjantech.com">
-                      info@sarjantech.com
+                      sarjan.tech.1@gmail.com
                     </a>
                   </div>
                 </div>
@@ -450,16 +450,11 @@ const Footer = () => {
                   <FaPhone />
                   <div>
                     <a href="tel:+15551234567">
-                      +1 (555) 123-4567
+                      +91 6353882600
                     </a>
                   </div>
                 </div>
                 <div className="contact-item">
-                  <FaMapMarkerAlt />
-                  <div>
-                    123 Tech Street<br />
-                    San Francisco, CA 94107
-                  </div>
                 </div>
               </ContactInfo>
 
@@ -482,15 +477,11 @@ const Footer = () => {
 
         <FooterBottom>
           <Copyright>
-            © {new Date().getFullYear()} <button onClick={scrollToTop}>Sarjan Tech</button>. 
+            © {new Date().getFullYear()} <button onClick={scrollToTop}>Sarjan Tech</button>.
             All rights reserved.
           </Copyright>
-          
-          <PoweredBy>
-            Powered by 
-            <img src="/sarjan-tech-logo.svg" alt="Sarjan Tech" />
-          </PoweredBy>
-          
+
+
           <ScrollToTop onClick={scrollToTop} aria-label="Scroll to top">
             <FaArrowUp />
           </ScrollToTop>

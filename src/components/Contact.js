@@ -1227,28 +1227,28 @@ const Contact = () => {
       id: 'business',
       title: 'Standard Business Website',
       icon: <FaGlobe />,
-      basePrice: 50000,
+      basePrice: 5000,
       description: 'Professional website for your business'
     },
     {
       id: 'ecommerce',
       title: 'E-commerce Platform',
       icon: <FaShoppingCart />,
-      basePrice: 100000,
+      basePrice: 10000,
       description: 'Online store with payment integration'
     },
     {
       id: 'mobile',
       title: 'Mobile App (iOS/Android/Both)',
       icon: <FaMobile />,
-      basePrice: 150000,
+      basePrice: 15000,
       description: 'Native or cross-platform mobile app'
     },
     {
       id: 'marketing',
       title: 'SEO & Digital Marketing Campaign',
       icon: <FaBullhorn />,
-      basePrice: 40000,
+      basePrice: 4000,
       description: 'Comprehensive digital marketing strategy'
     }
   ];
@@ -1259,34 +1259,34 @@ const Contact = () => {
       title: 'User Features',
       icon: <FaUser />,
       features: [
-        { id: 'user_login', name: 'User Login & Profiles', price: 15000 },
-        { id: 'admin_dashboard', name: 'Admin Dashboard', price: 20000 },
-        { id: 'reviews', name: 'Customer Reviews & Ratings', price: 10000 }
+        { id: 'user_login', name: 'User Login & Profiles', price: 1500 },
+        { id: 'admin_dashboard', name: 'Admin Dashboard', price: 2000 },
+        { id: 'reviews', name: 'Customer Reviews & Ratings', price: 1000 }
       ]
     },
     {
       title: 'E-commerce Features',
       icon: <FaShoppingCart />,
       features: [
-        { id: 'cart_payment', name: 'Shopping Cart & Online Payments', price: 25000 },
-        { id: 'wishlist', name: 'Product Wishlist & Comparisons', price: 12000 }
+        { id: 'cart_payment', name: 'Shopping Cart & Online Payments', price: 2500 },
+        { id: 'wishlist', name: 'Product Wishlist & Comparisons', price: 1200 }
       ]
     },
     {
       title: 'Content & Interaction',
       icon: <FaCamera />,
       features: [
-        { id: 'blog', name: 'Blog / News Section', price: 8000 },
-        { id: 'gallery', name: 'Photo / Video Gallery', price: 10000 },
-        { id: 'live_chat', name: 'Live Chat Integration', price: 12000 }
+        { id: 'blog', name: 'Blog / News Section', price: 800 },
+        { id: 'gallery', name: 'Photo / Video Gallery', price: 1000 },
+        { id: 'live_chat', name: 'Live Chat Integration', price: 1200 }
       ]
     },
     {
       title: 'Advanced',
       icon: <FaCog />,
       features: [
-        { id: 'booking', name: 'Booking / Appointment System', price: 20000 },
-        { id: 'api_integration', name: 'Third-Party API Integration', price: 25000 }
+        { id: 'booking', name: 'Booking / Appointment System', price: 2000 },
+        { id: 'api_integration', name: 'Third-Party API Integration', price: 2500 }
       ]
     }
   ];
@@ -1318,10 +1318,10 @@ const Contact = () => {
 
   // Budget ranges
   const budgetRanges = [
-    { id: 'budget_50k', min: 0, max: 50000, label: 'Up to ₹50,000', description: 'Starter projects' },
-    { id: 'budget_150k', min: 50000, max: 150000, label: '₹50,000 - ₹1,50,000', description: 'Standard projects' },
-    { id: 'budget_300k', min: 150000, max: 300000, label: '₹1,50,000 - ₹3,00,000', description: 'Premium projects' },
-    { id: 'budget_300k_plus', min: 300000, max: Infinity, label: '₹3,00,000+', description: 'Enterprise projects' }
+    { id: 'budget_50k', min: 0, max: 5000, label: 'Up to ₹5,000', description: 'Starter projects' },
+    { id: 'budget_150k', min: 5000, max: 15000, label: '₹5,000 - ₹15,000', description: 'Standard projects' },
+    { id: 'budget_300k', min: 15000, max: 30000, label: '₹15,000 - ₹30,000', description: 'Premium projects' },
+    { id: 'budget_300k_plus', min: 30000, max: Infinity, label: '₹30,000+', description: 'Enterprise projects' }
   ];
 
   // Policy & Support Options
@@ -1343,7 +1343,7 @@ const Contact = () => {
       id: 'standard_support',
       title: 'Standard Support',
       duration: '1 Year',
-      price: 15000,
+      price: 1500,
       features: [
         'Everything in Basic Support',
         'Priority email support (24h response)',
@@ -1359,7 +1359,7 @@ const Contact = () => {
       id: 'premium_support',
       title: 'Premium Support',
       duration: '2 Years',
-      price: 25000,
+      price: 2500,
       features: [
         'Everything in Standard Support',
         'Priority phone support (4h response)',
@@ -1376,7 +1376,7 @@ const Contact = () => {
       id: 'enterprise_support',
       title: 'Enterprise Support',
       duration: '3+ Years',
-      price: 40000,
+      price: 4000,
       features: [
         'Everything in Premium Support',
         'Dedicated account manager',

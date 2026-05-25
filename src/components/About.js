@@ -44,7 +44,17 @@ const FoundersGrid = styled.div`
   }
 `;
 
-const FounderCard = styled(motion(Card))`
+const FounderCard = styled(motion.div)`
+  background: ${colors.white};
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -62,51 +72,6 @@ const FounderCard = styled(motion(Card))`
 
   @media (max-width: ${breakpoints.mobile}) {
     padding: 30px 20px;
-  }
-`;
-
-const FounderImageContainer = styled.div`
-  position: relative;
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 25px;
-`;
-
-const FounderImage = styled.div`
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: linear-gradient(135deg, ${colors.primary}, ${colors.primaryHover});
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: ${colors.white};
-  font-size: 3rem;
-  font-weight: 700;
-  font-family: ${fonts.heading};
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(${props => props.image}) center/cover;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-  }
-
-  ${FounderCard}:hover & {
-    transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(255, 107, 0, 0.3);
-  }
-
-  ${FounderCard}:hover &::before {
-    transform: scale(1.1);
   }
 `;
 
@@ -263,9 +228,9 @@ const About = () => {
   ];
 
   const companyStats = [
-    { number: "50+", label: "Projects Delivered" },
-    { number: "30+", label: "Happy Clients" },
-    { number: "5+", label: "Years Experience" },
+    { number: "15+", label: "Projects Delivered" },
+    { number: "10+", label: "Happy Clients" },
+    { number: "2+", label: "Years Experience" },
     { number: "100%", label: "Client Satisfaction" }
   ];
 
@@ -318,12 +283,6 @@ const About = () => {
                 variants={itemVariants}
                 whileHover={{ y: -10 }}
               >
-                <FounderImageContainer>
-                  <FounderImage image={founder.image}>
-                    {!founder.image && founder.initials}
-                  </FounderImage>
-                </FounderImageContainer>
-
                 <FounderName>{founder.name}</FounderName>
                 <FounderTitle>{founder.title}</FounderTitle>
                 <FounderBio>{founder.bio}</FounderBio>

@@ -12,7 +12,9 @@ import {
   FaAws,
   FaWordpress,
   FaPython,
-  FaJs
+  FaJs,
+  FaServer,
+  FaPalette
 } from 'react-icons/fa';
 import { 
   SiNextdotjs,
@@ -59,7 +61,22 @@ const ServicesGrid = styled.div`
   }
 `;
 
-const ServiceCard = styled(motion(Card))`
+const ServiceCard = styled(motion.div)`
+  background: ${colors.white};
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  padding: 30px;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 20px;
+  }
+
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -187,6 +204,16 @@ const Services = () => {
       icon: <FaSearch />,
       title: "SEO Optimization",
       description: "Boost your online visibility with technical SEO, performance optimization, and search engine friendly code."
+    },
+    {
+      icon: <FaPalette />,
+      title: "UI/UX Design",
+      description: "Create beautiful, intuitive, and engaging user interfaces that provide exceptional experiences for your users."
+    },
+    {
+      icon: <FaServer />,
+      title: "Cloud & DevOps",
+      description: "Scalable cloud infrastructure and automated deployment pipelines to ensure your applications run smoothly."
     }
   ];
 
